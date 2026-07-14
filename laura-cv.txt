@@ -1,0 +1,27 @@
+LAURA
+Estudiante de Ingenieria de Sistemas
+
+Perfil
+Creativa, organizada y apasionada por la tecnologia, el diseno y la creacion de soluciones digitales.
+
+Habilidades
+- HTML
+- CSS
+- Bases de datos
+- Trabajo en equipo
+- Creatividad
+
+Educacion
+- Ingenieria de Sistemas, Universidad Catolica de Colombia
+- Bachiller tecnico graduada
+
+Certificados
+- Curso de Ofimatica, Microsoft Office, 2026
+- Fundamentos de Programacion, Platzi, 2024
+- Ingles basico/intermedio, EF Standard English Test, 2023
+- Herramientas digitales, Google Activate, 2023
+
+Contacto
+- lauramgp66@gmail.com
+- +57 322 405 2384
+- Bogotá, Colombia
