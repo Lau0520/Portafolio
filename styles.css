@@ -10,7 +10,7 @@
   --accent-strong: #ff78b8;
   --accent-soft: #2a315f;
   --shadow: 0 24px 60px rgba(5, 9, 27, 0.34);
-  --gold: #ffe59e;
+  --gold: #cc8ca7;
   --sky: #8dc5ff;
   --body-bg:
     radial-gradient(circle at top left, rgba(255, 164, 203, 0.16), transparent 24%),
@@ -52,14 +52,14 @@
 }
 
 body.light-theme {
-  --panel: rgba(255, 244, 248, 0.9);
-  --panel-strong: rgba(255, 232, 241, 0.96);
-  --text: #4c2f3b;
-  --muted: #7a5a68;
+  --panel: rgba(242, 214, 226, 0.92);
+  --panel-strong: rgba(234, 199, 214, 0.97);
+  --text: #24131b;
+  --muted: #4f3943;
   --line: rgba(210, 146, 175, 0.28);
   --accent: #f59ab8;
   --accent-strong: #de5f91;
-  --accent-soft: #fce0ea;
+  --accent-soft: #e6bccd;
   --shadow: 0 24px 60px rgba(184, 133, 156, 0.18);
   --gold: #d983a7;
   --sky: #b96f91;
@@ -73,30 +73,30 @@ body.light-theme {
     radial-gradient(circle at 66% 38%, rgba(255, 255, 255, 0.5) 0 1px, transparent 1.8px),
     radial-gradient(circle at 22% 72%, rgba(240, 184, 204, 0.4) 0 1.1px, transparent 2px),
     radial-gradient(circle at 90% 82%, rgba(255, 255, 255, 0.5) 0 1px, transparent 2px);
-  --header-bg: rgba(255, 245, 249, 0.84);
-  --header-border: rgba(229, 170, 194, 0.36);
-  --panel-border: rgba(231, 180, 201, 0.5);
-  --card-bg: rgba(255, 239, 245, 0.94);
-  --card-border: rgba(225, 174, 197, 0.46);
-  --secondary-bg: rgba(255, 230, 239, 0.92);
-  --secondary-border: rgba(219, 165, 188, 0.4);
-  --secondary-text: #7a4057;
-  --stats-bg: rgba(255, 239, 245, 0.92);
-  --stats-border: rgba(225, 174, 197, 0.4);
-  --title: #5c3142;
-  --hero-title: #ca5e8b;
-  --hero-subtitle: #724052;
-  --brand-color: #6c4051;
-  --caption-color: #6d4254;
+  --header-bg: rgba(236, 205, 218, 0.9);
+  --header-border: rgba(191, 129, 156, 0.42);
+  --panel-border: rgba(194, 133, 160, 0.52);
+  --card-bg: rgba(239, 209, 222, 0.96);
+  --card-border: rgba(190, 132, 157, 0.46);
+  --secondary-bg: rgba(232, 198, 212, 0.94);
+  --secondary-border: rgba(186, 126, 152, 0.42);
+  --secondary-text: #4a2836;
+  --stats-bg: rgba(237, 205, 219, 0.94);
+  --stats-border: rgba(187, 128, 153, 0.42);
+  --title: #361c27;
+  --hero-title: #9f3f68;
+  --hero-subtitle: #482936;
+  --brand-color: #412330;
+  --caption-color: #492b38;
   --illustration-bg:
-    radial-gradient(circle at top right, rgba(243, 171, 198, 0.26), transparent 36%),
-    rgba(255, 236, 243, 0.94);
-  --tag-bg: rgba(232, 164, 191, 0.24);
-  --tag-text: #7a4057;
-  --contact-link-bg: rgba(255, 232, 241, 0.94);
-  --contact-link-border: rgba(225, 174, 197, 0.42);
-  --project-tag-text: #7a4057;
-  --project-btn-text: #5c3142;
+    radial-gradient(circle at top right, rgba(214, 126, 164, 0.32), transparent 36%),
+    rgba(233, 203, 216, 0.95);
+  --tag-bg: rgba(208, 138, 168, 0.28);
+  --tag-text: #4c2b39;
+  --contact-link-bg: rgba(231, 198, 212, 0.96);
+  --contact-link-border: rgba(185, 126, 151, 0.42);
+  --project-tag-text: #4c2b39;
+  --project-btn-text: #361c27;
 }
 
 * {
@@ -339,7 +339,7 @@ a {
 }
 
 .progress-card {
-  max-width: 360px;
+  max-width: none;
 }
 
 main {
@@ -462,8 +462,8 @@ main {
 
 .btn-primary {
   color: #20162b;
-  background: linear-gradient(135deg, #ffd9e9, #ffe59e);
-  box-shadow: 0 18px 34px rgba(255, 229, 158, 0.18);
+  background: linear-gradient(135deg, #f7b2cf, #e889b4);
+  box-shadow: 0 18px 34px rgba(232, 137, 180, 0.24);
 }
 
 .btn-secondary {
@@ -1002,6 +1002,28 @@ main {
   text-align: center;
 }
 
+#certificados .cert-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+#certificados .icon-circle {
+  display: none;
+}
+
+#certificados .cert-card h4 {
+  margin: 0 0 10px;
+  min-height: 3.4rem;
+}
+
+#certificados .cert-link {
+  margin-top: 18px;
+  width: 100%;
+}
+
 .cert-preview {
   display: block;
   margin-bottom: 18px;
@@ -1026,6 +1048,71 @@ main {
   object-position: top center;
 }
 
+#certificados .cert-preview {
+  display: grid;
+  align-items: center;
+  min-height: 250px;
+  padding: 12px;
+}
+
+#certificados .cert-preview img {
+  width: 100%;
+  height: 226px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 14px;
+}
+
+#certificados .cert-card p {
+  min-height: 3.5rem;
+  margin: 12px 0 0;
+}
+
+#certificados .cert-card span {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+#progreso .cert-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+#progreso .cert-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+#progreso .cert-preview {
+  min-height: 190px;
+  margin-bottom: 16px;
+}
+
+#progreso .cert-preview img {
+  height: 190px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#progreso .cert-card h4 {
+  margin: 0 0 10px;
+  min-height: 3.2rem;
+  font-size: 1.08rem;
+}
+
+#progreso .cert-card p {
+  margin: 0;
+  min-height: 3.8rem;
+}
+
+#progreso .cert-card span {
+  margin-top: 10px;
+}
+
 .cert-card .icon-circle {
   margin: 0 auto 18px;
 }
@@ -1035,6 +1122,33 @@ main {
   margin-top: 12px;
   color: var(--accent-strong);
   font-weight: 700;
+}
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 229, 158, 0.14);
+  border: 1px solid rgba(255, 229, 158, 0.22);
+  color: #fff4cf;
+  font-size: 0.86rem;
+  font-weight: 700;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+body.light-theme .cert-link {
+  color: #452531;
+  background: rgba(255, 235, 206, 0.55);
+  border-color: rgba(181, 133, 92, 0.28);
+}
+
+.cert-link:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 229, 158, 0.2);
+  box-shadow: 0 16px 28px rgba(255, 229, 158, 0.12);
 }
 
 .progress-meta {
@@ -1062,27 +1176,6 @@ main {
   border-radius: inherit;
   background: linear-gradient(90deg, var(--accent), var(--gold));
   transition: width 220ms ease;
-}
-
-.cert-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 16px;
-  padding: 10px 16px;
-  border-radius: 999px;
-  background: rgba(255, 229, 158, 0.14);
-  border: 1px solid rgba(255, 229, 158, 0.22);
-  color: #fff4cf;
-  font-size: 0.86rem;
-  font-weight: 700;
-  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
-}
-
-.cert-link:hover {
-  transform: translateY(-2px);
-  background: rgba(255, 229, 158, 0.2);
-  box-shadow: 0 16px 28px rgba(255, 229, 158, 0.12);
 }
 
 .contact {
@@ -1157,6 +1250,10 @@ main {
   .mission-chip {
     left: 8px;
     bottom: 16px;
+  }
+
+  #progreso .cert-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1256,6 +1353,16 @@ main {
     transform: scale(0.9);
     transform-origin: center bottom;
   }
+
+  #progreso .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #progreso .cert-preview,
+  #progreso .cert-preview img {
+    height: auto;
+    min-height: 0;
+  }
 }
 /*=========================
         PROYECTOS
@@ -1319,7 +1426,7 @@ main {
     margin-top:10px;
     padding:12px 20px;
     border-radius:999px;
-    background:linear-gradient(135deg,#ffd9e9,#ffe59e);
+    background:linear-gradient(135deg,#f7b2cf,#e889b4);
     color:var(--project-btn-text);
     font-weight:800;
     transition:.3s;
