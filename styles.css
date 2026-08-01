@@ -1010,6 +1010,11 @@ main {
   justify-content: flex-start;
 }
 
+#certificados .cert-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
 #certificados .icon-circle {
   display: none;
 }
@@ -1252,6 +1257,10 @@ body.light-theme .cert-link {
     bottom: 16px;
   }
 
+  #certificados .cert-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   #progreso .cert-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1352,6 +1361,10 @@ body.light-theme .cert-link {
     width: 100%;
     transform: scale(0.9);
     transform-origin: center bottom;
+  }
+
+  #certificados .cert-grid {
+    grid-template-columns: 1fr;
   }
 
   #progreso .cert-grid {
