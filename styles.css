@@ -244,6 +244,7 @@ a {
   border: 1px solid var(--header-border);
   border-radius: 999px;
   box-shadow: var(--shadow);
+  z-index: 20;
 }
 
 .brand {
@@ -1273,33 +1274,43 @@ body.light-theme .cert-link {
 @media (max-width: 760px) {
   .site-header {
     top: 10px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 14px;
     padding: 16px 18px;
     border-radius: 28px;
+    background: color-mix(in srgb, var(--header-bg) 94%, #101529 6%);
+    backdrop-filter: blur(24px);
   }
 
   .menu-toggle {
     display: block;
+    order: 3;
   }
 
   .site-nav {
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    right: 0;
+    order: 4;
+    grid-column: 1 / -1;
+    position: static;
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
-    padding: 22px;
+    gap: 14px;
+    width: 100%;
+    margin-top: 4px;
+    padding: 18px;
     border-radius: 24px;
-    background: var(--header-bg);
+    background: color-mix(in srgb, var(--header-bg) 96%, #101529 4%);
     box-shadow: var(--shadow);
   }
 
   .theme-toggle {
-    width: 100%;
+    order: 2;
+    width: auto;
     justify-content: center;
+    padding: 11px 14px;
+    font-size: 0.92rem;
   }
 
   .site-header.is-open .site-nav {
@@ -1311,6 +1322,7 @@ body.light-theme .cert-link {
   .journey,
   .resume-grid,
   .cert-grid,
+  .projects-grid,
   .contact-strip {
     grid-template-columns: 1fr;
   }
@@ -1326,6 +1338,14 @@ body.light-theme .cert-link {
 
   .hero {
     gap: 28px;
+  }
+
+  .hero-copy {
+    order: 2;
+  }
+
+  .hero-visual {
+    order: 1;
   }
 
   .hero h1 {
@@ -1532,4 +1552,10 @@ body.light-theme .cert-link {
 
 .project-btn:hover{
     transform:translateY(-3px);
+}
+
+@media (max-width: 760px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
