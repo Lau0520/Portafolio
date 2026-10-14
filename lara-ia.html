@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lara IA: asistente académico con inteligencia artificial, LangGraph y RAG. Planificación por WhatsApp e integración con Outlook Calendar." />
+    <title>Lara IA | Laura Marcela Gutiérrez Pulido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="project-page lara-page">
+    <div class="page-glow page-glow-left" aria-hidden="true"></div>
+    <div class="page-glow page-glow-right" aria-hidden="true"></div>
+    <header class="shell site-header project-page-header">
+      <a class="brand" href="index.html#inicio">Laura<span>&#9829;</span></a>
+      <a class="back-link" href="index.html#proyectos">&larr; Volver al portafolio</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
+        <span class="theme-toggle-icon" aria-hidden="true">&#9782;</span>
+        <span class="theme-toggle-text">Modo claro</span>
+      </button>
+    </header>
+    <main class="shell project-page-main">
+      <section class="panel project-overview gluvi-hero lara-hero" aria-labelledby="lara-title">
+        <div class="gluvi-hero-copy">
+          <p class="section-kicker">Proyecto · Inteligencia artificial académica</p>
+          <h1 id="lara-title">Lara IA<span class="gluvi-title-dot" aria-hidden="true">.</span></h1>
+          <p class="gluvi-headline">Asistente académico inteligente</p>
+          <p class="gluvi-intro">Agente conversacional con inteligencia artificial para optimizar la gestión del tiempo, planificar actividades académicas y recomendar métodos de estudio personalizados.</p>
+          <div class="project-tags"><span>Python</span><span>LangGraph</span><span>RAG</span><span>Microsoft Azure</span></div>
+          <div class="gluvi-hero-actions">
+            <a class="project-btn" href="#features-title">Explorar el proyecto &darr;</a>
+            <a class="gluvi-text-link" href="https://github.com/JuanFe2608/academic_agent" target="_blank" rel="noreferrer">Ver repositorio &nearr;</a>
+          </div>
+        </div>
+        <div class="lara-visual">
+          <img class="lara-portrait" src="assets/lara-ia/lara-perfil.jpg" alt="Ilustración de Lara IA mostrando un perfil estudiantil en una biblioteca" width="1254" height="1254" decoding="async" />
+        </div>
+      </section>
+      <ul class="lara-stats" aria-label="Resultados del proyecto">
+        <li><span class="lara-stat-value">15</span><span>Documentos en la base de conocimiento</span></li>
+        <li><span class="lara-stat-value">8</span><span>Módulos funcionales desarrollados</span></li>
+        <li><span class="lara-stat-value">MVP</span><span>Funcional, desplegado y probado</span></li>
+      </ul>
+      <section class="gluvi-collaboration" aria-labelledby="about-title">
+        <div class="gluvi-section-heading">
+          <p id="about-title" class="section-kicker">Lara IA · Agente de inteligencia artificial académico</p>
+          <p>Lara IA funcionó como apoyo para estudiantes universitarios en la organización de su tiempo, la planificación de actividades y el descubrimiento de métodos de estudio adaptados a sus necesidades.</p>
+          <p>Integró inteligencia artificial generativa, una arquitectura de agentes con LangGraph y un sistema RAG (Retrieval-Augmented Generation) para generar recomendaciones fundamentadas en una base de conocimiento especializada.</p>
+          <p>Mediante WhatsApp, los estudiantes pudieron registrar sus horarios, organizar tareas, identificar espacios disponibles y sincronizar actividades con Outlook Calendar.</p>
+        </div>
+      </section>
+      <section class="gluvi-features" aria-labelledby="features-title">
+        <div class="gluvi-section-heading">
+          <p class="section-kicker">Funcionalidades</p>
+          <h2 id="features-title">Un aliado para la vida universitaria</h2>
+        </div>
+        <div class="gluvi-feature-grid lara-feature-grid">
+<article class="gluvi-feature-card"><span class="gluvi-feature-number" aria-hidden="true">01</span><h3>Conversación por WhatsApp</h3><p>Permite comunicarse en lenguaje natural con el agente sin instalar una aplicación adicional.</p></article>
+<article class="gluvi-feature-card"><span class="gluvi-feature-number" aria-hidden="true">02</span><h3>Planificación académica inteligente</h3><p>Organiza tareas, entregas, evaluaciones y sesiones de estudio según la disponibilidad, las fechas y las prioridades del estudiante.</p></article>
+<article class="gluvi-feature-card"><span class="gluvi-feature-number" aria-hidden="true">03</span><h3>Métodos de estudio personalizados</h3><p>Combina el perfil estudiantil con conocimiento recuperado mediante RAG para recomendar técnicas de aprendizaje adaptadas a sus necesidades.</p></article>
+<article class="gluvi-feature-card"><span class="gluvi-feature-number" aria-hidden="true">04</span><h3>Gestión y replanificación</h3><p>Permite registrar horarios fijos, identificar espacios libres y modificar o eliminar actividades.</p></article>
+<article class="gluvi-feature-card"><span class="gluvi-feature-number" aria-hidden="true">05</span><h3>Conexión con Outlook Calendar</h3><p>Vincula la cuenta del estudiante para gestionar eventos académicos mediante Microsoft Graph.</p></article>
+        </div>
+      </section>
+      <section class="panel gluvi-contribution" aria-labelledby="architecture-title">
+        <div class="gluvi-section-heading">
+          <p class="section-kicker">Arquitectura del sistema</p>
+          <h2 id="architecture-title">Así se conecta Lara IA</h2>
+          <p>Una arquitectura de agentes conecta la conversación, la recuperación de conocimiento y el calendario del estudiante.</p>
+        </div>
+        <div class="lara-architecture" role="group" aria-label="WhatsApp se comunica con el agente LangGraph. El agente utiliza PostgreSQL y pgvector para datos y conocimiento RAG, Azure OpenAI para lenguaje y embeddings y Microsoft Graph para Outlook Calendar.">
+          <div class="lara-architecture-node lara-channel"><span class="lara-node-label">Interfaz conversacional</span><h3>WhatsApp Cloud API</h3></div>
+          <span class="lara-connector" aria-hidden="true">↕</span>
+          <div class="lara-architecture-node lara-agent"><span class="lara-node-label">Orquestación y lógica conversacional</span><h3>Lara IA · LangGraph</h3></div>
+          <div class="lara-branches">
+            <div class="lara-architecture-node"><span class="lara-node-label">Datos, memoria y conocimiento RAG</span><h3>PostgreSQL + pgvector</h3></div>
+            <div class="lara-architecture-node"><span class="lara-node-label">LLM y embeddings</span><h3>Azure OpenAI</h3></div>
+            <div class="lara-architecture-node"><span class="lara-node-label">Integración con Outlook Calendar</span><h3>Microsoft Graph API</h3></div>
+          </div>
+        </div>
+        <p class="lara-architecture-caption">Arquitectura conceptual simplificada. Backend desplegado mediante Docker y Azure Container Apps.</p>
+      </section>
+      <section class="gluvi-features" aria-labelledby="technology-title">
+        <div class="gluvi-section-heading">
+          <p class="section-kicker">Tecnologías utilizadas</p>
+          <h2 id="technology-title">Las piezas del proyecto</h2>
+          <p>Desarrollado en Python, con PostgreSQL y pgvector para persistencia y recuperación de información, e integraciones con Azure OpenAI, Microsoft Graph y WhatsApp Cloud API.</p>
+        </div>
+        <ul class="lara-technologies">
+<li>Python</li><li>LangGraph</li><li>Azure OpenAI</li><li>PostgreSQL</li><li>pgvector</li><li>RAG</li><li>Docker</li><li>Microsoft Azure</li><li>Microsoft Graph API</li><li>WhatsApp Cloud API</li><li>OAuth 2.0</li>
+        </ul>
+      </section>
+      <section class="panel gluvi-contribution" aria-labelledby="results-title">
+        <div class="gluvi-section-heading">
+          <p class="section-kicker">Resultados y validación</p>
+          <h2 id="results-title">De la investigación al prototipo</h2>
+          <p>El prototipo fue desplegado en Microsoft Azure y evaluado mediante pruebas funcionales con estudiantes universitarios.</p>
+        </div>
+        <ul class="lara-results">
+<li><span class="lara-result-dot" aria-hidden="true"></span><div><h3>Investigación</h3><p>Selección de 15 documentos especializados tras una búsqueda de más de 1.000 fuentes sobre métodos y técnicas de estudio.</p></div></li>
+<li><span class="lara-result-dot" aria-hidden="true"></span><div><h3>Base de conocimiento RAG</h3><p>Procesamiento de documentos en fragmentos y almacenamiento vectorial con PostgreSQL y pgvector para recuperar información relevante.</p></div></li>
+<li><span class="lara-result-dot" aria-hidden="true"></span><div><h3>Despliegue en la nube</h3><p>Backend publicado en Azure Container Apps, con imagen Docker, registro de contenedores y base de datos PostgreSQL.</p></div></li>
+<li><span class="lara-result-dot" aria-hidden="true"></span><div><h3>Pruebas con estudiantes</h3><p>Pruebas funcionales locales y prueba piloto con estudiantes universitarios del semillero Mailab.</p></div></li>
+<li><span class="lara-result-dot" aria-hidden="true"></span><div><h3>MVP funcional</h3><p>Prototipo desplegado y probado con integración de WhatsApp y Outlook Calendar, y percepción positiva de los estudiantes en las pruebas de usabilidad.</p></div></li>
+        </ul>
+        <p class="gluvi-medical-note">La evaluación respalda el funcionamiento y la utilidad percibida del prototipo. El impacto a largo plazo sobre el rendimiento académico y la deserción universitaria no fue medido.</p>
+      </section>
+      <footer class="project-page-footer">
+        <a class="back-link" href="index.html#proyectos">&larr; Volver a proyectos</a>
+        <p class="closing-note">&copy; 2026 Laura Gutiérrez</p>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

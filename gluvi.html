@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gluvi: aplicación móvil desarrollada en Android Studio, colaboración internacional y aporte de Laura Marcela Gutiérrez Pulido." />
+    <title>Gluvi | Laura Marcela Gutiérrez Pulido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="project-page">
+    <div class="page-glow page-glow-left" aria-hidden="true"></div>
+    <div class="page-glow page-glow-right" aria-hidden="true"></div>
+    <header class="shell site-header project-page-header">
+      <a class="brand" href="index.html#inicio">Laura<span>&#9829;</span></a>
+      <a class="back-link" href="index.html#proyectos">&larr; Volver al portafolio</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
+        <span class="theme-toggle-icon" aria-hidden="true">&#9782;</span>
+        <span class="theme-toggle-text">Modo claro</span>
+      </button>
+    </header>
+    <main class="shell project-page-main">
+      <section class="panel project-overview gluvi-hero" aria-labelledby="gluvi-title">
+        <div class="gluvi-hero-copy">
+          <p class="section-kicker">Proyecto · Aplicación móvil</p>
+          <h1 id="gluvi-title">Gluvi<span class="gluvi-title-dot" aria-hidden="true">.</span></h1>
+          <p class="gluvi-headline">Tecnología que invita<br />a cuidarse.</p>
+          <p class="gluvi-intro">Una aplicación móvil enfocada en la educación, prevención y orientación sobre la diabetes tipo 1 y el síndrome metabólico.</p>
+          <div class="project-tags">
+            <span>Android Studio</span><span>GitLab</span><span>Colaboración internacional</span>
+          </div>
+          <div class="gluvi-hero-actions">
+            <a class="project-btn" href="#gallery-title">Explorar la app &darr;</a>
+            <a class="gluvi-text-link" href="https://gitlab.com/JonathanAcevedo/gluvi" target="_blank" rel="noreferrer">Ver repositorio &nearr;</a>
+          </div>
+        </div>
+        <div class="gluvi-hero-visual">
+          <div class="gluvi-phone-halo" aria-hidden="true"></div>
+          <img class="gluvi-cover" src="assets/gluvi/bienvenida.webp" alt="Pantalla de bienvenida de Gluvi" width="900" height="2004" decoding="async" />
+          <span class="gluvi-visual-note">Diseñada para informar y orientar</span>
+        </div>
+      </section>
+
+      <section class="gluvi-collaboration" aria-labelledby="collaboration-title">
+        <div class="gluvi-section-heading">
+          <p class="section-kicker">Tres universidades · Un propósito</p>
+          <h2 id="collaboration-title">Un proyecto sin fronteras</h2>
+          <p>Gluvi nació de una colaboración internacional que une desarrollo de software, innovación tecnológica y trabajo en equipo para crear soluciones digitales con impacto social.</p>
+        </div>
+        <ul class="gluvi-universities">
+          <li><span class="gluvi-country">Colombia</span><span>Universidad Católica de Colombia</span></li>
+          <li><span class="gluvi-country">México</span><span>Tecnológico de Monterrey</span></li>
+          <li><span class="gluvi-country">Estados Unidos</span><span>University of Florida</span></li>
+        </ul>
+      </section>
+
+      <section class="gluvi-features" aria-labelledby="features-title">
+        <div class="gluvi-section-heading">
+          <p class="section-kicker">Acerca de la aplicación</p>
+          <h2 id="features-title">Conocer, explorar y aprender</h2>
+          <p>Desarrollada en Android Studio, Gluvi acerca la información de salud a los usuarios de forma clara y accesible.</p>
+        </div>
+        <div class="gluvi-feature-grid">
+          <article class="gluvi-feature-card">
+            <span class="gluvi-feature-number" aria-hidden="true">01</span>
+            <h3>Cuestionarios interactivos</h3>
+            <p>Preguntas sobre diabetes tipo 1 y síndrome metabólico para explorar posibles factores de riesgo asociados a estas condiciones.</p>
+          </article>
+          <article class="gluvi-feature-card">
+            <span class="gluvi-feature-number" aria-hidden="true">02</span>
+            <h3>Resultados orientativos</h3>
+            <p>A partir de las respuestas proporcionadas, los usuarios pueden conocer su nivel de riesgo estimado mediante una presentación clara de los resultados.</p>
+          </article>
+          <article class="gluvi-feature-card">
+            <span class="gluvi-feature-number" aria-hidden="true">03</span>
+            <h3>Información para cuidarse</h3>
+            <p>Datos de interés y recomendaciones generales de salud que fomentan el autocuidado y la toma de decisiones informadas.</p>
+          </article>
+        </div>
+        <p class="gluvi-medical-note">Gluvi no es una herramienta de diagnóstico médico. Su función es exclusivamente informativa y orientativa; los resultados no sustituyen una valoración realizada por profesionales de la salud.</p>
+      </section>
+
+      <section class="panel gluvi-contribution" aria-labelledby="contribution-title">
+        <div class="gluvi-section-heading">
+          <h2 id="contribution-title">Mi aporte como desarrolladora</h2>
+          <p>Participé en la implementación de los cuestionarios interactivos sobre diabetes tipo 1 y síndrome metabólico, desarrollando la lógica que conecta las respuestas de los usuarios con sus resultados.</p>
+        </div>
+        <ol class="gluvi-process">
+          <li><span class="gluvi-step" aria-hidden="true">01</span><div><h3>Asignación de puntajes</h3><p>Implementé la asignación de puntajes a las respuestas proporcionadas por los usuarios.</p></div></li>
+          <li><span class="gluvi-step" aria-hidden="true">02</span><div><h3>Cálculo de resultados</h3><p>Desarrollé la lógica de cálculo de los resultados de los cuestionarios.</p></div></li>
+          <li><span class="gluvi-step" aria-hidden="true">03</span><div><h3>Clasificación del riesgo</h3><p>Integré la clasificación de los niveles de riesgo según las respuestas de cada usuario.</p></div></li>
+        </ol>
+        <p class="gluvi-contribution-close">Una funcionalidad clave para que los usuarios obtuvieran orientación informativa sobre sus posibles factores de riesgo de manera clara y accesible.</p>
+      </section>
+
+      <section class="panel project-gallery" aria-labelledby="gallery-title">
+        <p class="section-kicker">La aplicación</p>
+        <h2 id="gallery-title">Un recorrido por Gluvi</h2>
+        <p class="gallery-intro">Desde la bienvenida hasta los cuestionarios y sus resultados. Selecciona una captura para verla en tamaño completo.</p>
+        <div class="app-gallery">
+          <figure class="app-screenshot">
+            <a href="assets/gluvi/bienvenida.webp" target="_blank" rel="noreferrer" aria-label="Abrir imagen completa: Bienvenida a Gluvi">
+              <img src="assets/gluvi/bienvenida.webp" alt="Bienvenida a Gluvi" width="900" height="2004" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Bienvenida a Gluvi</figcaption>
+          </figure>
+          <figure class="app-screenshot">
+            <a href="assets/gluvi/seleccion-tests.webp" target="_blank" rel="noreferrer" aria-label="Abrir imagen completa: Selección de cuestionarios">
+              <img src="assets/gluvi/seleccion-tests.webp" alt="Selección de cuestionarios" width="900" height="2004" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Selección de cuestionarios</figcaption>
+          </figure>
+          <figure class="app-screenshot">
+            <a href="assets/gluvi/cuestionario-diabetes.webp" target="_blank" rel="noreferrer" aria-label="Abrir imagen completa: Cuestionario de diabetes tipo 1">
+              <img src="assets/gluvi/cuestionario-diabetes.webp" alt="Cuestionario de diabetes tipo 1" width="900" height="2004" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Cuestionario de diabetes tipo 1</figcaption>
+          </figure>
+          <figure class="app-screenshot">
+            <a href="assets/gluvi/resultado.webp" target="_blank" rel="noreferrer" aria-label="Abrir imagen completa: Resultado orientativo del cuestionario">
+              <img src="assets/gluvi/resultado.webp" alt="Resultado orientativo del cuestionario" width="900" height="2004" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Resultado orientativo del cuestionario</figcaption>
+          </figure>
+          <figure class="app-screenshot">
+            <a href="assets/gluvi/datos-curiosos.webp" target="_blank" rel="noreferrer" aria-label="Abrir imagen completa: Datos curiosos">
+              <img src="assets/gluvi/datos-curiosos.webp" alt="Datos curiosos y contenido educativo de Gluvi" width="900" height="2004" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Datos curiosos</figcaption>
+          </figure>
+          <figure class="app-screenshot">
+            <a href="assets/gluvi/colaboradores.webp" target="_blank" rel="noreferrer" aria-label="Abrir imagen completa: Universidades y equipos colaboradores">
+              <img src="assets/gluvi/colaboradores.webp" alt="Universidades y equipos colaboradores" width="900" height="2004" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Universidades y equipos colaboradores</figcaption>
+          </figure>
+          <figure class="app-screenshot">
+            <a href="assets/gluvi/equipo-desarrollo.webp" target="_blank" rel="noreferrer" aria-label="Abrir imagen completa: Equipo de desarrollo de la Universidad Católica de Colombia">
+              <img src="assets/gluvi/equipo-desarrollo.webp" alt="Equipo de desarrollo de la Universidad Católica de Colombia" width="900" height="2004" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Equipo de desarrollo de la Universidad Católica de Colombia</figcaption>
+          </figure>
+        </div>
+      </section>
+      <footer class="project-page-footer">
+        <a class="back-link" href="index.html#proyectos">&larr; Volver a proyectos</a>
+        <p class="closing-note">&copy; 2026 Laura Gutiérrez</p>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
